@@ -1,0 +1,13 @@
+services:
+  wayobot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:8080"
+    volumes:
+      - ./wayobot:/usr/local/wayobot
+    environment:
+      brainySecret: "YOUR_SECRET"
+      api_domain: "http://localhost"
+      storagePath: "/usr/local/wayobot"
