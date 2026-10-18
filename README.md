@@ -2,6 +2,8 @@
 
 ### From Simple Chatbot Conversation Flow Studio to Story Game Engine.
 
+![Wayobot Studio](assets/wayobot-conversation-flows.png)
+
 Some things don't need to be complicated.
 
 Wayobot helps you design conversation flows, build chatbots, and create interactive story games — one flow at a time.
@@ -61,6 +63,8 @@ Please contact the developer to discuss your requirements and get started.
 
 We're happy to help you find the right setup for your needs.
 
+[![Wayobot Studio](https://img.youtube.com/vi/pUr6omhJf-M/maxresdefault.jpg)](https://www.youtube.com/watch?v=pUr6omhJf-M)
+
 ## The Wayobot Way
 
 Start simple.
@@ -70,3 +74,27 @@ Add more when you're ready.
 You don't have to build everything at once.
 
 **Wayobot — From conversations to adventures. One flow at a time.**
+
+## More Than Chatbots: Stories with a Purpose
+
+A story game isn't just for entertainment.
+
+Businesses can use interactive stories to turn ordinary interactions into engaging experiences.
+
+- **Marketing & Engagement** — Let customers explore products and services through interactive stories.
+- **Training & Simulation** — Help employees practice decisions in realistic, risk-free scenarios.
+- **Tourism & Experiences** — Create interactive adventures that bring places and brands to life.
+- **Product Discovery** — Guide customers toward relevant products through choices and personalized paths.
+
+With Wayobot, you can build branching stories, interactive scenarios, and choice-driven experiences using conversation flows.
+
+No need to build a full-scale game.
+Sometimes, a few good choices are enough to tell a story.
+
+## The Wayobot Way
+
+Start with a simple flow.
+Turn it into a conversation.
+Turn that conversation into an experience.
+
+[![Wayobot Story Game Short Demo](https://img.youtube.com/vi/3RH5YCRd5oc/hqdefault.jpg)](https://www.youtube.com/shorts/3RH5YCRd5oc)
