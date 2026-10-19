@@ -10,6 +10,5 @@ services:
     volumes:
       - ./wayobot:/usr/local/wayobot
     environment:
-      brainySecret: "YOUR_SECRET"
-      api_domain: "http://localhost"
-      storagePath: "/usr/local/wayobot"
+      STORAGE_PATH: "/usr/local/wayobot"
+      PUBLIC_BASE_URL: YOUR_PUBLIC_URL
