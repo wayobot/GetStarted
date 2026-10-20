@@ -95,3 +95,112 @@ Start with a simple flow.
 Turn it into a conversation.
 Turn that conversation into an experience.
 You don't have to build everything at once.
+
+## Optional: Connect Wayobot to LINE Using ngrok
+
+If you want to connect Wayobot to the LINE Messaging API while running it locally, you can use ngrok to expose your local web server through a public HTTPS URL.
+
+### 1. Create a Docker Compose File
+
+Create a `docker-compose.yml` file with the following configuration:
+
+```yaml
+services:
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: my-ngrok
+    restart: unless-stopped
+
+    command:
+      - http
+      - host.docker.internal:80
+
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN}
+
+    ports:
+      - "4040:4040"
+```
+
+Create a `.env` file in the same directory:
+
+```dotenv
+NGROK_AUTHTOKEN=your-ngrok-authtoken
+```
+
+Replace `your-ngrok-authtoken` with your authtoken from the [ngrok dashboard](https://dashboard.ngrok.com/get-started/your-authtoken).
+
+Keep your `.env` file private and do not commit it to GitHub.
+
+This configuration forwards public traffic to port `80` on your host machine. Make sure Wayobot is accessible at `http://localhost:80`.
+
+### 2. Start ngrok
+
+Run the following command in the directory containing `docker-compose.yml`:
+
+```bash
+docker compose up -d
+```
+
+### 3. Get Your Public HTTPS URL
+
+Open the ngrok web interface:
+
+[http://localhost:4040](http://localhost:4040)
+
+Alternatively, view the container logs:
+
+```bash
+docker compose logs -f ngrok
+```
+
+Find the public HTTPS forwarding URL, which should look similar to:
+
+```text
+https://[NGROK-GENERATED-ID].ngrok.app
+```
+
+Your public URL may differ and can change when the ngrok agent restarts.
+
+### 4. Configure the LINE Webhook
+
+1. Open the [LINE Developers Console](https://developers.line.biz/console/).
+
+2. Select your Messaging API channel.
+
+3. Find the **Webhook URL** setting.
+
+4. Enter your public HTTPS URL followed by your Wayobot webhook endpoint.
+
+For example:
+
+```text
+https://[NGROK-GENERATED-ID].ngrok.app/webhooks/home/welcome
+```
+
+5. Save the URL and select **Verify**.
+6. Enable **Use webhook**.
+
+Replace the example URL with your actual ngrok URL and the appropriate webhook path for your bot.
+
+### 5. Configure LINE Integration
+
+1. You can obtain the following credentials from your channel's settings in the [LINE Developers Console](https://developers.line.biz/console/).
+	Copy Channel Access Token and Secret.
+2. Open Wayobot Studio at http://localhost.
+	Log in using the demo credentials:
+	Username: home
+	Password: demo
+3. Navigate to the LINE channel page in Studio.
+	Enter your LINE Messaging API credentials:
+	Save your configuration.
+
+### 6. Stop ngrok
+
+When you no longer need the tunnel, run:
+
+```bash
+docker compose down
+```
+
+**Note:** This setup is intended for local development and testing. Do not expose sensitive services without appropriate security controls.
