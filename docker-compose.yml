@@ -11,4 +11,3 @@ services:
       - ./wayobot:/usr/local/wayobot
     environment:
       STORAGE_PATH: "/usr/local/wayobot"
-      PUBLIC_BASE_URL: YOUR_PUBLIC_URL
