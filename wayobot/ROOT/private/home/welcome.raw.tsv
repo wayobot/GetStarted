@@ -1,0 +1,21 @@
+Number	Keywords	Answer	Question	Next	Expressions	W	X	Y
+	borderColor	#000000						
+	createdDate	2026-Jun-15 07:18:01						
+	description							
+	language	TH						
+	loadingGif							
+	publish	true						
+	title	Hello World						
+1	greeting			4			28	205
+2	unknown			13			422	392
+3	silent						32	427
+4		/public/home/doll-head.png		5,6,7			165	159
+5		ยินดีต้อนรับสู่ร้านโชว์ไม่ห่วยจ้า..		8			470	81
+6		เจอกันอีกแล้ว ติดใจร้านพี่เหรอ..		8			472	200
+7		วันนี้มีของสดๆใหม่ๆมาเพียบเลยน้า..		8			473	310
+8		ต้องการอะไรบอกได้นะ..	yes	9,10			726	147
+9		## เหรอ		11	`?l_order=##`		963	219
+10	ไม่*	ไม่เป็นไร วันหลังมาใหม่นะ				1.0	947	39
+11		ได้สินค้าถูกใจก็แคปภาพมา	yes	12			859	371
+12		อย่าลืมสลิปการโอนเงินด้วยนะ			`?l_capture=##`		1153	429
+13		## อะไรเหรอ ติดต่อแอดมินได้ที่ 02XXX นะ					602	437
