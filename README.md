@@ -186,3 +186,12 @@ Make sure you copy the complete Webhook URL from Wayobot Studio rather than cons
 - The `home` / `demo` credentials are for demonstration purposes only. Do not use them for a production deployment.
 
 **Note:** This setup is intended for local development and testing. Do not expose sensitive services without appropriate security controls.
+
+## Learning Resources & Contact
+
+Want to learn more about Wayobot?
+
+- **Video Tutorials:** Explore the [Wayobot course on SkillLane](https://www.skilllane.com/courses/chatbot-wayobot) for instructional videos and tutorials.
+- **Further Information & Inquiries:** Contact [wayobot.oss@gmail.com](mailto:wayobot.oss@gmail.com) for more information, technical inquiries, quotations, or discussions about using Wayobot in your projects.
+
+Whether you're exploring Wayobot for learning, development, or business use, we're happy to hear from you.
