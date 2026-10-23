@@ -191,6 +191,7 @@ Make sure you copy the complete Webhook URL from Wayobot Studio rather than cons
 
 Want to learn more about Wayobot?
 
+- **Documentation:** [Wayobot Wiki](https://github.com/wayobot/GetStarted/wiki)
 - **Video Tutorials:** Explore the [Wayobot course on SkillLane](https://www.skilllane.com/courses/chatbot-wayobot) for instructional videos and tutorials.
 - **Further Information & Inquiries:** Contact [wayobot.oss@gmail.com](mailto:wayobot.oss@gmail.com) for more information, technical inquiries, quotations, or discussions about using Wayobot in your projects.
 
