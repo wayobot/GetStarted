@@ -1,6 +1,6 @@
 # Wayobot
 
-### From Simple Chatbot Conversation Flow Studio to Story Game Engine.
+### A code-less chatbot builder for conversations and interactive stories.
 
 ![Wayobot Studio](assets/wayobot-conversation-flows.png)
 
